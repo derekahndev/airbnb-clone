@@ -19,11 +19,11 @@ class SearchForm(forms.Form):
     superhost = forms.BooleanField(required=False)
     amenities = forms.ModelMultipleChoiceField(
         required=False,
-        quaryset=models.Amenity.objects.all(),
+        queryset=models.Amenity.objects.all(),
         widget=forms.CheckboxSelectMultiple,
     )
     facilities = forms.ModelMultipleChoiceField(
         required=False,
-        quaryset=models.Facility.objects.all(),
+        queryset=models.Facility.objects.all(),
         widget=forms.CheckboxSelectMultiple,
     )
