@@ -40,4 +40,4 @@ class Message(core_models.TimeStampedModel):
     )
 
     def __str__(self):
-        return f"{self.user} says: {self.text}"
+        return f"{self.user} says: {self.message}"
